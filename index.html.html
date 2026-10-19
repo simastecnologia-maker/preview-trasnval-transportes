@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transval Transportes & Armazenagem | Soluções Logísticas de Alta Precisão</title>
+    <meta name="description" content="Transporte rodoviário de cargas fracionadas, dedicadas e armazenagem estratégica em São Paulo. Segurança, pontualidade e monitoramento 24h.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            600: '#1d4ed8',
+                            800: '#1e3a8a',
+                            900: '#0f172a',
+                            dark: '#0a0f1d'
+                        },
+                        accent: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        .glass-header {
+            background: rgba(10, 15, 29, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.15) 0%, transparent 40%),
+                        radial-gradient(circle at 10% 80%, rgba(29, 78, 216, 0.2) 0%, transparent 50%),
+                        #0a0f1d;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-accent-500 selection:text-white">
+
+    <!-- Topbar Institucional -->
+    <div class="bg-brand-900 border-b border-slate-800 text-xs text-slate-300 py-2.5 px-4 sm:px-8">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-y-2">
+            <div class="flex items-center gap-6">
+                <span class="flex items-center gap-1.5 font-medium text-slate-400">
+                    <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+                    CNPJ: 63.945.359/0001-51
+                </span>
+                <span class="hidden md:flex items-center gap-1.5 text-slate-400">
+                    <i data-lucide="map-pin" class="w-4 h-4 text-accent-500"></i>
+                    São Domingos - São Paulo/SP
+                </span>
+            </div>
+            
+            <div class="flex items-center gap-5">
+                <a href="tel:+551125325313" class="hover:text-accent-400 transition-colors flex items-center gap-1.5 font-semibold">
+                    <i data-lucide="phone-call" class="w-3.5 h-3.5 text-accent-500"></i>
+                    (11) 2532-5313
+                </a>
+                <span class="text-slate-600 hidden sm:inline">|</span>
+                <div class="flex items-center gap-3">
+                    <a href="https://wa.me/5511942156157" target="_blank" class="hover:text-emerald-400 transition-colors flex items-center gap-1">
+                        <i data-lucide="message-square" class="w-3.5 h-3.5 text-emerald-400"></i>
+                        Carlos
+                    </a>
+                    <a href="https://wa.me/5511989221812" target="_blank" class="hover:text-emerald-400 transition-colors flex items-center gap-1">
+                        <i data-lucide="message-square" class="w-3.5 h-3.5 text-emerald-400"></i>
+                        Valéria
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navegação Principal -->
+    <header class="sticky top-0 z-50 glass-header border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
+            <!-- Logotipo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 bg-gradient-to-br from-accent-500 to-amber-600 rounded-xl flex items-center justify-center text-brand-dark font-black text-xl shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+                    <i data-lucide="truck" class="w-6 h-6 stroke-[2.5]"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-extrabold tracking-tight text-white block leading-none">TRANSVAL</span>
+                    <span class="text-[10px] tracking-[0.25em] text-accent-400 font-bold uppercase block mt-1">Transportes & Armazém</span>
+                </div>
+            </a>
+
+            <!-- Menu Desktop -->
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="#servicos" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Soluções</a>
+                <a href="#diferenciais" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Diferenciais</a>
+                <a href="#armazenagem" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Armazenagem</a>
+                <a href="#sobre" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">A Empresa</a>
+                <a href="#contato" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Contato</a>
+            </nav>
+
+            <!-- CTA Header -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="#cotacao" class="bg-gradient-to-r from-accent-500 to-amber-600 hover:from-accent-400 hover:to-amber-500 text-brand-dark font-bold px-5 py-2.5 rounded-lg text-sm transition-all shadow-md hover:shadow-accent-500/25 flex items-center gap-2">
+                    <i data-lucide="calculator" class="w-4 h-4"></i>
+                    Cotar Frete
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="lg:hidden p-2 text-slate-400 hover:text-white focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-brand-dark border-b border-slate-800 px-6 py-6 space-y-4">
+            <a href="#servicos" class="block text-slate-200 font-medium py-1">Soluções</a>
+            <a href="#diferenciais" class="block text-slate-200 font-medium py-1">Diferenciais</a>
+            <a href="#armazenagem" class="block text-slate-200 font-medium py-1">Armazenagem</a>
+            <a href="#sobre" class="block text-slate-200 font-medium py-1">A Empresa</a>
+            <a href="#contato" class="block text-slate-200 font-medium py-1">Contato</a>
+            <a href="#cotacao" class="w-full text-center bg-accent-500 text-brand-dark font-bold py-3 rounded-lg block">Solicitar Cotação Rápida</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white pt-16 pb-24 md:pt-24 md:pb-32 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-slate-800/80 border border-slate-700/80 px-3.5 py-1.5 rounded-full text-xs font-semibold text-accent-400">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Hub Estratégico em São Paulo
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
+                        Transporte e Armazenagem com <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-amber-500">precisão, segurança</span> e agilidade.
+                    </h1>
+
+                    <p class="text-lg text-slate-300 max-w-xl font-normal leading-relaxed">
+                        Conectamos sua indústria ou comércio ao destino com gestão completa de cargas dedicadas, fracionadas e armazenagem inteligente. Atendimento direto com quem decide.
+                    </p>
+
+                    <!-- Trust Points -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-800 text-sm">
+                        <div class="flex items-center gap-2.5 text-slate-300">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-accent-400 flex-shrink-0"></i>
+                            <span>Seguro Total RCTR-C</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 text-slate-300">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-accent-400 flex-shrink-0"></i>
+                            <span>Rastreamento 24/7</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 text-slate-300 col-span-2 sm:col-span-1">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-accent-400 flex-shrink-0"></i>
+                            <span>Armazém Próprio</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+                        <a href="#cotacao" class="bg-accent-500 hover:bg-accent-400 text-brand-dark font-extrabold px-8 py-4 rounded-xl text-center shadow-lg shadow-accent-500/20 hover:scale-[1.02] transition-transform flex items-center justify-center gap-2">
+                            <span>Solicitar Cotação Agora</span>
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                        <a href="tel:+551125325313" class="border border-slate-700 hover:bg-slate-800/60 text-white font-semibold px-6 py-4 rounded-xl text-center transition-colors flex items-center justify-center gap-2">
+                            <i data-lucide="phone" class="w-5 h-5 text-accent-400"></i>
+                            (11) 2532-5313
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formulário de Cotação Dinâmica no Hero (CRO Puro) -->
+                <div id="cotacao" class="lg:col-span-5">
+                    <div class="bg-white rounded-2xl p-6 sm:p-8 text-slate-900 shadow-2xl border border-slate-100 relative">
+                        <div class="mb-6">
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="text-xs uppercase tracking-wider font-bold text-accent-600">Atendimento Imediato</span>
+                                <span class="flex h-2 w-2 relative">
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                                </span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-slate-900">Simulador de Cotação</h3>
+                            <p class="text-xs text-slate-500 mt-1">Preencha os detalhes e receba a proposta no seu WhatsApp.</p>
+                        </div>
+
+                        <form id="quote-form" class="space-y-4">
+                            <div class="grid grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 mb-1">Cidade de Origem</label>
+                                    <input type="text" id="quote-origem" required placeholder="Ex: São Paulo - SP" class="w-full text-sm bg-slate-50 border border-slate-200 rounded-lg px-3.5 py-2.5 focus:ring-2 focus:ring-accent-500 focus:outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 mb-1">Cidade de Destino</label>
+                                    <input type="text" id="quote-destino" required placeholder="Ex: Campinas - SP" class="w-full text-sm bg-slate-50 border border-slate-200 rounded-lg px-3.5 py-2.5 focus:ring-2 focus:ring-accent-500 focus:outline-none">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">Modalidade Desejada</label>
+                                <select id="quote-modalidade" class="w-full text-sm bg-slate-50 border border-slate-200 rounded-lg px-3.5 py-2.5 focus:ring-2 focus:ring-accent-500 focus:outline-none">
+                                    <option value="Carga Completa (Dedicada / Lotação)">Carga Completa (Dedicada / Lotação)</option>
+                                    <option value="Carga Fracionada">Carga Fracionada</option>
+                                    <option value="Armazenagem & Logística">Armazenagem & Logística</option>
+                                    <option value="Distribuição Expressa">Distribuição Expressa</option>
+                                </select>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 mb-1">Peso / Volume Estimado</label>
+                                    <input type="text" id="quote-peso" placeholder="Ex: 500kg ou 4 pallets" class="w-full text-sm bg-slate-50 border border-slate-200 rounded-lg px-3.5 py-2.5 focus:ring-2 focus:ring-accent-500 focus:outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 mb-1">Tipo de Mercadoria</label>
+                                    <input type="text" id="quote-tipo" placeholder="Ex: Maquinário, Alimentos..." class="w-full text-sm bg-slate-50 border border-slate-200 rounded-lg px-3.5 py-2.5 focus:ring-2 focus:ring-accent-500 focus:outline-none">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">Falar com qual especialista?</label>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <label class="flex items-center gap-2 p-2.5 border rounded-lg cursor-pointer hover:bg-slate-50 text-xs font-medium">
+                                        <input type="radio" name="contact-target" value="carlos" checked class="text-accent-500 focus:ring-accent-500">
+                                        <span>Carlos (Sócio)</span>
+                                    </label>
+                                    <label class="flex items-center gap-2 p-2.5 border rounded-lg cursor-pointer hover:bg-slate-50 text-xs font-medium">
+                                        <input type="radio" name="contact-target" value="valeria" class="text-accent-500 focus:ring-accent-500">
+                                        <span>Valéria (Sócia)</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-emerald-600/20 flex items-center justify-center gap-2 text-sm mt-2">
+                                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                                Enviar Cotação via WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Faixa de Métricas / Credibilidade -->
+    <section class="bg-white border-b border-slate-200 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-slate-100">
+                <div class="pt-4 md:pt-0">
+                    <p class="text-3xl lg:text-4xl font-extrabold text-slate-900">100%</p>
+                    <p class="text-sm text-slate-500 mt-1 font-medium">Frota Assegurada</p>
+                </div>
+                <div class="pt-4 md:pt-0">
+                    <p class="text-3xl lg:text-4xl font-extrabold text-slate-900">24/7</p>
+                    <p class="text-sm text-slate-500 mt-1 font-medium">Monitoramento em Tempo Real</p>
+                </div>
+                <div class="pt-4 md:pt-0">
+                    <p class="text-3xl lg:text-4xl font-extrabold text-slate-900">99.4%</p>
+                    <p class="text-sm text-slate-500 mt-1 font-medium">Índice de Pontualidade</p>
+                </div>
+                <div class="pt-4 md:pt-0">
+                    <p class="text-3xl lg:text-4xl font-extrabold text-slate-900">+10 Anos</p>
+                    <p class="text-sm text-slate-500 mt-1 font-medium">Expertise Operacional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluções / Serviços -->
+    <section id="servicos" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-wider text-accent-600 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">Operações Customizadas</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Soluções Completas de Transporte e Armazenagem</h2>
+                <p class="text-slate-600 mt-3 text-base">Modelos flexíveis para abastecer sua cadeia de suprimentos sem rupturas e com máxima economia.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 hover:border-slate-300 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 bg-blue-50 text-brand-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="container" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Cargas Lotação & Dedicadas</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Veículo exclusivo para sua carga do ponto de coleta ao destino final. Ideal para grandes volumes, mercadorias sensíveis e cronogramas rígidos.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Rota direta sem transbordos</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Veículos adequados a cada cubagem</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 hover:border-slate-300 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 bg-amber-50 text-accent-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="boxes" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Carga Fracionada</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Otimização de custos compartilhando espaço rodoviário com total organização e rastreamento. Excelente custo-benefício para comércios e PMEs.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Consolidação rápida de fretes</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Redução de frete unitário</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 hover:border-slate-300 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="warehouse" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Armazenagem & Cross-Docking</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Estrutura completa em São Paulo para armazenar, gerenciar estoques e realizar transbordo rápido sem a necessidade de manter galpões ociosos.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Gestão de inventário e picking</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Prontidão de expedição imediata</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por que a Transval? (Diferenciais) -->
+    <section id="diferenciais" class="py-20 bg-brand-dark text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-accent-400">Vantagem Operacional</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold mt-3 tracking-tight">Por que grandes empresas confiam na Transval?</h2>
+                    <p class="text-slate-400 mt-4 leading-relaxed">
+                        Eliminamos intermediários burocráticos. Na Transval, você trata diretamente com a liderança para ter respostas imediatas, negociações personalizadas e flexibilidade operacional.
+                    </p>
+
+                    <div class="space-y-6 mt-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-accent-400 flex-shrink-0">
+                                <i data-lucide="map-pinned" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-100 text-base">Localização Privilegiada em SP</h4>
+                                <p class="text-slate-400 text-sm mt-1">Sediada em São Domingos, com acesso imediato às Rodovias Anhanguera, Bandeirantes e às Marginais Tietê e Pinheiros.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-accent-400 flex-shrink-0">
+                                <i data-lucide="shield-alert" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-100 text-base">Gerenciamento de Risco Rigoroso</h4>
+                                <p class="text-slate-400 text-sm mt-1">Apólices de seguro completas e rastreadores modernos via satélite garantem integridade total de ponta a ponta.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-accent-400 flex-shrink-0">
+                                <i data-lucide="user-check" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-100 text-base">Atendimento Humanizado com os Sócios</h4>
+                                <p class="text-slate-400 text-sm mt-1">Valéria e Carlos acompanham o andamento operacional, oferecendo transparência total sem robôs de atendimento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Apresentação dos Sócios / Decisores -->
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-10 shadow-2xl relative">
+                    <div class="absolute -top-3 right-8 bg-emerald-500 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        Decisão Direta
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Fale com a Liderança</h3>
+                    <p class="text-sm text-slate-400 mb-8">Precisando de uma solução sob medida para sua empresa? Fale diretamente com nossos sócios diretores:</p>
+
+                    <div class="space-y-4">
+                        <!-- Carlos -->
+                        <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/80 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <h4 class="font-bold text-slate-100">Carlos</h4>
+                                    <span class="text-xs bg-slate-700 text-slate-300 px-2 py-0.5 rounded">Sócio Diretor</span>
+                                </div>
+                                <p class="text-xs text-slate-400 mt-1">Operações, Frotas & Contratos Especiais</p>
+                            </div>
+                            <a href="https://wa.me/5511942156157" target="_blank" class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg transition-colors">
+                                <i data-lucide="message-square" class="w-4 h-4"></i>
+                                +55 11 94215-6157
+                            </a>
+                        </div>
+
+                        <!-- Valéria -->
+                        <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/80 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <h4 class="font-bold text-slate-100">Valéria</h4>
+                                    <span class="text-xs bg-slate-700 text-slate-300 px-2 py-0.5 rounded">Sócia Diretora</span>
+                                </div>
+                                <p class="text-xs text-slate-400 mt-1">Comercial, Cotações & Atendimento ao Cliente</p>
+                            </div>
+                            <a href="https://wa.me/5511989221812" target="_blank" class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg transition-colors">
+                                <i data-lucide="message-square" class="w-4 h-4"></i>
+                                (11) 98922-1812
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- PABX Corporativo -->
+                    <div class="mt-6 pt-6 border-t border-slate-800 flex items-center justify-between">
+                        <div>
+                            <p class="text-xs text-slate-400">Central Telefônica (Fixo):</p>
+                            <p class="text-base font-bold text-accent-400 mt-0.5">+55 (11) 2532-5313</p>
+                        </div>
+                        <a href="tel:+551125325313" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 px-3.5 py-2 rounded-lg font-medium transition-colors">
+                            Ligar Agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre a Empresa & Localização -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-wider text-accent-600 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">Estrutura & Confiança</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">Transval Transportes: Segurança que Move Seus Negócios</h2>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        A <strong>Transval Transportes</strong> é especializada no transporte rodoviário de cargas e armazenagem corporativa. Atuando com rigor operacional e foco no cumprimento de prazos, nos tornamos parceiros estratégicos de indústrias, distribuidores e varejistas.
+                    </p>
+                    
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="building" class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5"></i>
+                            <div>
+                                <h5 class="text-sm font-bold text-slate-900">Razão Social & Dados Legais</h5>
+                                <p class="text-xs text-slate-600 mt-0.5">Transval Transportes | CNPJ: 63.945.359/0001-51</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="navigation" class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5"></i>
+                            <div>
+                                <h5 class="text-sm font-bold text-slate-900">Endereço da Base Operacional</h5>
+                                <p class="text-xs text-slate-600 mt-0.5">Rua Rubens de Souza Araújo, 757 - São Domingos, São Paulo - SP</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="clock" class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5"></i>
+                            <div>
+                                <h5 class="text-sm font-bold text-slate-900">Expediente Operacional</h5>
+                                <p class="text-xs text-slate-600 mt-0.5">Segunda a Sexta: 08:00 às 18:00 (Suporte operacional para cargas 24/7)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mapa / Rota Estratégica Interativa -->
+                <div class="lg:col-span-6">
+                    <div class="bg-slate-100 rounded-3xl overflow-hidden border border-slate-200 shadow-md">
+                        <div class="p-6 bg-slate-900 text-white flex items-center justify-between">
+                            <div>
+                                <h4 class="font-bold text-sm">Hub Logístico São Domingos</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Localização Estratégica em São Paulo</p>
+                            </div>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Rua+Rubens+de+Souza+Araújo+757+São+Domingos+SP" target="_blank" class="text-xs bg-accent-500 hover:bg-accent-400 text-brand-dark px-3 py-1.5 rounded-lg font-bold flex items-center gap-1.5 transition-colors">
+                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Abrir no Maps
+                            </a>
+                        </div>
+                        
+                        <div class="p-8 text-center bg-gradient-to-b from-slate-100 to-slate-200">
+                            <div class="max-w-sm mx-auto space-y-4">
+                                <div class="w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto text-accent-600">
+                                    <i data-lucide="map-pin" class="w-8 h-8"></i>
+                                </div>
+                                <h5 class="font-bold text-slate-900">Ponto Estratégico de Escoamento</h5>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    Nossa base em São Domingos permite fácil conexão aos principais anéis viários da Grande São Paulo e ligação direta ao interior e aos portos.
+                                </p>
+                                <div class="pt-2">
+                                    <span class="inline-block bg-white border border-slate-200 text-slate-700 text-xs px-3 py-1 rounded-full font-semibold shadow-sm">
+                                        Rua Rubens de Souza Araújo, 757
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Banner -->
+    <section class="bg-brand-900 py-16 text-white text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 relative z-10 space-y-6">
+            <h2 class="text-3xl sm:text-4xl font-extrabold">Pronto para elevar o padrão do seu transporte?</h2>
+            <p class="text-slate-300 max-w-2xl mx-auto text-base">
+                Fale agora com nossos especialistas e obtenha uma proposta sob medida com as melhores taxas do mercado.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 pt-2">
+                <a href="https://wa.me/5511942156157?text=Olá Carlos, gostaria de uma cotação para minha carga." target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg flex items-center gap-2 text-sm transition-all">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    Falar com Carlos
+                </a>
+                <a href="https://wa.me/5511989221812?text=Olá Valéria, gostaria de cotar um frete/armazenagem." target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg flex items-center gap-2 text-sm transition-all">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    Falar com Valéria
+                </a>
+                <a href="tel:+551125325313" class="bg-slate-800 hover:bg-slate-700 text-white font-semibold px-6 py-3.5 rounded-xl flex items-center gap-2 text-sm transition-all border border-slate-700">
+                    <i data-lucide="phone" class="w-4 h-4 text-accent-400"></i>
+                    Ligar: (11) 2532-5313
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="bg-brand-dark text-slate-400 border-t border-slate-800/80 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+                
+                <!-- Coluna 1: Logo & CNPJ -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-9 h-9 bg-accent-500 rounded-lg flex items-center justify-center text-brand-dark font-black">
+                            <i data-lucide="truck" class="w-5 h-5"></i>
+                        </div>
+                        <span class="text-xl font-bold tracking-tight text-white">TRANSVAL</span>
+                    </div>
+                    <p class="text-xs leading-relaxed text-slate-400">
+                        Transporte rodoviário de cargas seguras, soluções de armazenagem e distribuição física para toda a região metropolitana e interior.
+                    </p>
+                    <p class="text-xs text-slate-500 font-mono">
+                        CNPJ: 63.945.359/0001-51
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Serviços -->
+                <div>
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Serviços</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#servicos" class="hover:text-white transition-colors">Transporte Lotação (FTL)</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition-colors">Carga Fracionada (LTL)</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition-colors">Armazenagem & Cross-Docking</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition-colors">Distribuição Urbana SP</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition-colors">Logística Reversa</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Contatos Diretos -->
+                <div>
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Contato Direto</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4 text-accent-400"></i>
+                            <a href="tel:+551125325313" class="hover:text-white transition-colors">+55 (11) 2532-5313 (Fixo)</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="user" class="w-4 h-4 text-emerald-400"></i>
+                            <span>Valéria: <a href="tel:+5511989221812" class="hover:text-white underline">11 98922-1812</a></span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="user" class="w-4 h-4 text-emerald-400"></i>
+                            <span>Carlos: <a href="tel:+5511942156157" class="hover:text-white underline">+55 11 94215-6157</a></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Endereço -->
+                <div>
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Base Operacional</h4>
+                    <address class="not-italic text-xs leading-relaxed space-y-2 text-slate-400">
+                        <p class="flex items-start gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-accent-400 flex-shrink-0 mt-0.5"></i>
+                            <span>Rua Rubens de Souza Araújo, 757<br>Bairro São Domingos<br>São Paulo - SP</span>
+                        </p>
+                    </address>
+                </div>
+
+            </div>
+
+            <!-- Rodapé Copyright -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; <span id="current-year"></span> Transval Transportes. Todos os direitos reservados.</p>
+                <p class="flex items-center gap-4">
+                    <span>Segurança & Rastreamento 24h</span>
+                    <span>•</span>
+                    <span>Políticas de Privacidade</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp com Seleção de Contato -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
+        <!-- Menu popover rápido (oculto por padrão) -->
+        <div id="wa-popover" class="hidden bg-white rounded-2xl shadow-2xl border border-slate-200 p-4 w-64 mb-1 animate-fade-in text-slate-800">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <span class="text-xs font-bold text-slate-900">Iniciar Atendimento</span>
+                <span class="text-[10px] bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full font-bold">Online</span>
+            </div>
+            <div class="space-y-2 mt-3">
+                <a href="https://wa.me/5511942156157?text=Olá Carlos, estou no site da Transval e gostaria de solicitar uma cotação." target="_blank" class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition-colors">
+                    <div class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-xs">C</div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-900 leading-none">Carlos</p>
+                        <p class="text-[10px] text-slate-500 mt-0.5">Sócio Operacional</p>
+                    </div>
+                </a>
+                <a href="https://wa.me/5511989221812?text=Olá Valéria, estou no site da Transval e gostaria de solicitar uma cotação." target="_blank" class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition-colors">
+                    <div class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-xs">V</div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-900 leading-none">Valéria</p>
+                        <p class="text-[10px] text-slate-500 mt-0.5">Sócia Comercial</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <button id="wa-btn" class="bg-emerald-600 hover:bg-emerald-500 text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-all duration-300 relative group" title="Falar no WhatsApp">
+            <i data-lucide="message-circle" class="w-7 h-7"></i>
+            <span class="absolute right-full mr-3 bg-slate-900 text-white text-xs px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity font-medium pointer-events-none shadow-md">
+                Fale com nossos sócios
+            </span>
+        </button>
+    </div>
+
+    <!-- Script de Inicialização de Ícones e Lógica -->
+    <script>
+        // Renderizar ícones Lucide
+        lucide.createIcons();
+
+        // Ano dinâmico no footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Menu Mobile Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // WhatsApp Popover Toggle
+        const waBtn = document.getElementById('wa-btn');
+        const waPopover = document.getElementById('wa-popover');
+        waBtn.addEventListener('click', () => {
+            waPopover.classList.toggle('hidden');
+        });
+
+        // Formulário de Cotação Dinâmica via WhatsApp
+        const quoteForm = document.getElementById('quote-form');
+        quoteForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const origem = document.getElementById('quote-origem').value.trim();
+            const destino = document.getElementById('quote-destino').value.trim();
+            const modalidade = document.getElementById('quote-modalidade').value;
+            const peso = document.getElementById('quote-peso').value.trim() || 'Não especificado';
+            const tipo = document.getElementById('quote-tipo').value.trim() || 'Carga geral';
+            const contactTarget = document.querySelector('input[name="contact-target"]:checked').value;
+
+            // Determina o número de destino de acordo com o sócio escolhido
+            const phone = contactTarget === 'carlos' ? '5511942156157' : '5511989221812';
+            const socioNome = contactTarget === 'carlos' ? 'Carlos' : 'Valéria';
+
+            // Mensagem estruturada
+            const text = `Olá, ${socioNome}! Vim pelo site da Transval Transportes e gostaria de uma cotação:\n\n` +
+                         `📍 *Origem:* ${origem}\n` +
+                         `🏁 *Destino:* ${destino}\n` +
+                         `📦 *Modalidade:* ${modalidade}\n` +
+                         `⚖️ *Peso/Volume:* ${peso}\n` +
+                         `🏷️ *Tipo de Carga:* ${tipo}\n\n` +
+                         `Poderiam me informar valores e prazos?`;
+
+            const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+            window.open(url, '_blank');
+        });
+    </script>
+</body>
+</html>
